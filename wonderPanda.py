@@ -127,8 +127,8 @@ class entity(pygame.sprite.Sprite):
         elif distance <= area_radius + 60:
             self.judge = 2
             # uncomment to auto
-            #if distance <= area_radius + 10:
-            #    auto(self)
+            if distance <= area_radius + 10:
+                auto(self)
         elif distance <= area_radius + 80:
             self.judge = 3       
 
